@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.25"
   s.summary = "Reads metadata form iPhone Package Archive Files (ipa)."
   s.test_files = ["test/test_ipa_reader.rb"]
+  s.licenses = ["MIT"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
