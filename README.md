@@ -4,31 +4,29 @@ by [Nicholas Schlueter](http://twitter.com/schlu)
 
 ## DESCRIPTION
 
-Reads metadata form iPhone Package Archive Files (ipa).
-
-I am using this gem to get version to build the over the air iPhone Ad Hoc distribution plist file.
+Fork for maintaining at MX to serve specific needs of reading IPA plist file.
 
 ## USAGE
 
 ```bash
 irb > require 'rubygems'
- => true 
+ => true
 irb > require 'ipa_reader'
- => true 
+ => true
 irb > ipa_file = IpaReader::IpaFile.new("/path/to/file.ipa")
  => #<IpaReader::IpaFile:0x1012a9458>
 irb > ipa_file.version
- => "1.2.2.4" 
+ => "1.2.2.4"
 irb > ipa_file.name
- => "MultiG" 
+ => "MultiG"
 irb > ipa_file.target_os_version
- => "4.1" 
+ => "4.1"
 irb > ipa_file.minimum_os_version
- => "3.1" 
+ => "3.1"
 irb > ipa_file.url_schemes
- => [] 
+ => []
 irb > ipa_file.bundle_identifier
- => "com.dcrails.multig" 
+ => "com.dcrails.multig"
 irb > ipa_file.icon_prerendered
  => false
 ```
